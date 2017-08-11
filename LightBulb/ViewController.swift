@@ -26,10 +26,20 @@ class ViewController: UIViewController {
         
         print(sender.selectedSegmentIndex)
         
+        switch sender.selectedSegmentIndex {
+        case (0):
+            lightBulb.backgroundColor = UIColor.red
+        case (1):
+            lightBulb.backgroundColor = .yellow
+        case (2):
+            lightBulb.backgroundColor = .green
+        case (3):
+            lightBulb.backgroundColor = .blue
+        default: lightBulb.backgroundColor = .blue
+            }
+        }
     }
     
-    
 
-   
 
-}
+
